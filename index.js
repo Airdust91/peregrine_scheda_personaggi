@@ -1,3 +1,16 @@
+const express = require('express'); // Se non lo hai già, assicurati di avere Express installato
+
+// Crea una nuova applicazione Express
+const app = express();
+
+// Ascolta sulla porta specificata, di default usa il valore di process.env.PORT
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+
+
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
