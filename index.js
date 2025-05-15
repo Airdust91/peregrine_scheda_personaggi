@@ -213,4 +213,12 @@ async function processCharacters() {
     }
 }
 
+// Avvia subito
 processCharacters();
+
+// Ripeti ogni 5 minuti (300000 ms)
+setInterval(() => {
+    console.log("⏳ Controllo nuovi personaggi approvati...");
+    processCharacters();
+}, 300000);
+
