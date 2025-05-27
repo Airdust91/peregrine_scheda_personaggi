@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheda Personaggio Sci-Fi</title>
+    
+    <!-- Stile Scheda -->
+    <link rel="stylesheet" href="../template/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- NAVBAR LATERALE -->
+        <div class="side-navbar">
+            <a href="#" class="nav-item active" data-tab="home">
+                <span class="nav-icon"><i class="fas fa-home"></i></span>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="#" class="nav-item" data-tab="profilo">
+                <span class="nav-icon"><i class="fas fa-user"></i></span>
+                <span class="nav-text">Profilo</span>
+            </a>
+            <a href="#" class="nav-item" data-tab="storia">
+                <span class="nav-icon"><i class="fas fa-book"></i></span>
+                <span class="nav-text">Storia</span>
+            </a>
+            <a href="#" class="nav-item" data-tab="tratti">
+                <span class="nav-icon"><i class="fas fa-star"></i></span>
+                <span class="nav-text">Tratti</span>
+            </a>
+            <a href="#" class="nav-item" data-tab="abilita">
+                <span class="nav-icon"><i class="fas fa-bolt"></i></span>
+                <span class="nav-text">Abilit?</span>
+            </a>
+            <a href="#" class="nav-item" data-tab="inventario">
+                <span class="nav-icon"><i class="fas fa-box"></i></span>
+                <span class="nav-text">Inventario</span>
+            </a>
+            <a href="#" class="nav-item" data-tab="esperienza">
+                <span class="nav-icon"><i class="fas fa-chart-line"></i></span>
+                <span class="nav-text">Esperienza</span>
+            </a>
+            <a href="#" class="nav-item" data-tab="note">
+                <span class="nav-icon"><i class="fas fa-lock"></i></span>
+                <span class="nav-text">Note Master</span>
+            </a>
+            <a href="#" class="nav-item" data-tab="banca">
+                <span class="nav-icon"><i class="fas fa-gem"></i></span>
+                <span class="nav-text">Banca</span>
+            </a>
+        </div>
+        
+        <div class="content-container">
+            <!-- SCHEDA PRINCIPALE - Home -->
+            <div class="character-card" id="home-content">
+                <div class="card-header">
+                    <div class="info-section">
+                        <h1 class="character-name">$NOME$</h1>
+                        <h2 class="character-surname">$COGNOME$</h2>
+                        
+                        <div class="separator"></div>
+                        
+                        <div style="margin-top: 20px;">
+                            <div style="color: #64c4ff; font-size: 18px; margin-bottom: 5px;">$RUOLO$ - $CORPORAZIONE$</div>
+                            <div style="font-family: 'Courier New', monospace; color: #64c4ff; margin-top: 15px; letter-spacing: 2px;">$CLASSE$</div>
+                        </div>
+                    </div>
+                    
+                    <div class="image-section">
+                        <img src="$IMMAGINE$" onerror="this.src='https://via.placeholder.com/600x800?text=Immagine+Personaggio'">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CONTENUTO DELLE TAB -->
+            <!-- PROFILO -->
+            <div id="profilo" class="tab-content">
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <h2 class="section-title"><i class="fas fa-user"></i> Profilo</h2>
+                
+                <div class="content-grid">
+                    <div>
+                        <strong style="color: #64c4ff;">Nome:</strong> $NOME$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Cognome:</strong> $COGNOME$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Genere:</strong> $GENERE$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Et? Anagrafica:</strong> $ETA_ANAGRAFICA$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Et? Biologica:</strong> $ETA_BIOLOGICA$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Razza:</strong> $RAZZA$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Classe:</strong> $CLASSE$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Altezza:</strong> $ALTEZZA$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Peso:</strong> $PESO$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Occhi:</strong> $COLORE_OCCHI$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Capelli:</strong> $COLORE_CAPELLI$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Corporazione:</strong> $CORPORAZIONE$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Ruolo:</strong> $RUOLO$
+                    </div>
+                    <div>
+                        <strong style="color: #64c4ff;">Soglia di Affaticamento:</strong> $SOGLIA_AFFATICAMENTO$
+                    </div>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <h3 style="color: #64c4ff;">Descrizione Fisica</h3>
+                    <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(100, 196, 255, 0.2); border-radius: 6px; padding: 20px;">
+                        <p>$DESCRIZIONE_FISICA$</p>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <h3 style="color: #64c4ff;">Descrizione Caratteriale</h3>
+                        <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(100, 196, 255, 0.2); border-radius: 6px; padding: 20px;">
+                            <p>$DESCRIZIONE_CARATTERE$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- STORIA -->
+            <div id="storia" class="tab-content">
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <h2 class="section-title"><i class="fas fa-book"></i> Storia Personale</h2>
+                
+                <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(100, 196, 255, 0.2); border-radius: 6px; padding: 20px; margin-bottom: 30px;">
+                    <h3 style="color: #64c4ff; margin-top: 0;">Background</h3>
+                    <p>$STORIA$</p>
+                </div>
+            </div>
+            
+            <!-- TRATTI -->
+            <div id="tratti" class="tab-content">
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <h2 class="section-title"><i class="fas fa-star"></i> Tratti</h2>
+                
+                <!-- Tabs per categorie di tratti -->
+                <div class="traits-tabs">
+                    <button class="trait-tab-btn active" data-trait-type="positivi">Tratti Positivi</button>
+                    <button class="trait-tab-btn" data-trait-type="negativi">Tratti Negativi</button>
+                </div>
+                
+                <!-- Contenitore dei tratti -->
+                <div class="traits-container">
+                    <!-- Tratti Positivi -->
+                    <div class="trait-category active" id="positivi-traits">
+                        <div class="traits-grid" id="positivi-traits-grid">
+                            <!-- I tratti positivi verranno generati dinamicamente qui -->
+                            $TRATTI_POSITIVI$
+                        </div>
+                    </div>
+                    
+                    <!-- Tratti Negativi -->
+                    <div class="trait-category" id="negativi-traits">
+                        <div class="traits-grid" id="negativi-traits-grid">
+                            <!-- I tratti negativi verranno generati dinamicamente qui -->
+                            $TRATTI_NEGATIVI$
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ABILIT? -->
+<div id="abilita" class="tab-content">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <h2 class="section-title"><i class="fas fa-bolt"></i> Abilit? e Competenze</h2>
+    
+    <!-- Nota informativa in alto -->
+    <div class="info-note" style="margin-bottom: 30px;">
+        <i class="fas fa-info-circle"></i>
+        <div>
+            Per richiedere l'acquisto di nuove abilit?, utilizza il sistema di ticket nel canale <strong>#SUPPORTO</strong> su Discord.
+        </div>
+    </div>
+    
+    <!-- Abilit? a card -->
+    <h3 style="color: #64c4ff;">Abilit?</h3>
+    <div class="abilities-grid">
+        $ABILITA$
+    </div>
+</div>
+            
+           <!-- INVENTARIO -->
+<div id="inventario" class="tab-content">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <h2 class="section-title"><i class="fas fa-box"></i> Inventario</h2>
+    
+    <!-- Nota informativa -->
+    <div class="info-note" style="margin-bottom: 30px;">
+        <i class="fas fa-info-circle"></i>
+        <div>
+            Per equipaggiare o disequipaggiare oggetti, usa il comando <strong>!equip</strong> o <strong>!unequip</strong> nelle chat di gioco su Discord.
+        </div>
+    </div>
+    
+    <h3 style="color: #64c4ff;"><i class="fas fa-user"></i> Equipaggiato</h3>
+    <div class="inventory-grid" style="margin-bottom: 30px;">
+        $EQUIPAGGIATO$
+    </div>
+    
+    <h3 style="color: #64c4ff;"><i class="fas fa-backpack"></i> Zaino</h3>
+    <div class="inventory-grid" style="margin-bottom: 30px;">
+        $ZAINO$
+    </div>
+</div>
+
+
+            <!-- ESPERIENZA -->
+<div id="esperienza" class="tab-content">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <h2 class="section-title"><i class="fas fa-chart-line"></i> Punti Esperienza</h2>
+    
+    <!-- Riepilogo XP -->
+    <div class="xp-summary">
+        <div class="xp-box">
+            <div class="xp-title">PX Totali</div>
+            <div class="xp-value">$PX_TOTALI$</div>
+        </div>
+        <div class="xp-box">
+            <div class="xp-title">PX Spesi</div>
+            <div class="xp-value">$PX_SPESI$</div>
+        </div>
+        <div class="xp-box highlight-box">
+            <div class="xp-title">PX Disponibili</div>
+            <div class="xp-value">$PX_DISPONIBILI$</div>
+        </div>
+    </div>
+    
+    <!-- Storico XP -->
+    <h3 style="color: #64c4ff; margin-top: 30px;">Storico Punti Esperienza</h3>
+    <div class="xp-history">
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr style="border-bottom: 1px solid rgba(100, 196, 255, 0.3);">
+                <th style="text-align: left; padding: 10px; color: #64c4ff;">Data</th>
+                <th style="text-align: left; padding: 10px; color: #64c4ff;">Descrizione</th>
+                <th style="text-align: right; padding: 10px; color: #64c4ff;">PX</th>
+            </tr>
+            $STORICO_PX$
+        </table>
+    </div>
+    
+    <!-- Nota informativa -->
+    <div class="info-note">
+        <i class="fas fa-info-circle"></i>
+        <div>
+            Per richiedere l'acquisto di nuove abilit?, utilizza il sistema di ticket nel canale <strong>#SUPPORTO</strong> su Discord.
+        </div>
+    </div>
+</div>
+
+            
+            <!-- NOTE MASTER -->
+            <div id="note" class="tab-content">
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <h2 class="section-title"><i class="fas fa-lock"></i> Note Master</h2>
+                    <p>$NOTE_MASTER$</p>
+            </div>
+            
+            <!-- BANCA -->
+            <div id="banca" class="tab-content">
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <h2 class="section-title"><i class="fas fa-gem"></i> Risorse e Banca</h2>
+                
+                <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(100, 196, 255, 0.3); border-radius: 6px; padding: 15px; text-align: center; margin-bottom: 30px;">
+                    <div style="color: #64c4ff; text-transform: uppercase; margin-bottom: 5px;">CREDITI DISPONIBILI</div>
+                    <div style="font-size: 32px; font-weight: 700;">$CREDITI$</div>
+                </div>
+                
+                <h3 style="color: #64c4ff;">Transazioni Recenti</h3>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr style="border-bottom: 1px solid rgba(100, 196, 255, 0.3);">
+                        <th style="text-align: left; padding: 10px; color: #64c4ff;">Data</th>
+                        <th style="text-align: left; padding: 10px; color: #64c4ff;">Descrizione</th>
+                        <th style="text-align: right; padding: 10px; color: #64c4ff;">Importo</th>
+                    </tr>
+                    $TRANSAZIONI$
+                </table>
+            </div>
+        </div>
+    </div>
+
+<!-- Javascript Scheda -->
+    <script src="../template/script.js"></script>
+    
+</body>
+</html>
