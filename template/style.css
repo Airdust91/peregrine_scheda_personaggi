@@ -554,33 +554,63 @@ body::before {
 
 /* Griglia per abilità */
 .abilities-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .ability-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(100, 196, 255, 0.2);
-    border-radius: 6px;
-    padding: 15px;
-    position: relative;
-    overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(100, 196, 255, 0.2);
+  border-radius: 6px;
+  padding: 15px;
+  transition: all 0.3s ease;
 }
 
-.ability-name {
-    color: #64c4ff;
-    font-weight: 600;
-    margin-bottom: 8px;
-    font-size: 16px;
-    border-bottom: 1px solid rgba(100, 196, 255, 0.2);
-    padding-bottom: 5px;
+.ability-card:hover {
+  box-shadow: 0 0 15px rgba(100, 196, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.ability-title {
+  color: #64c4ff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(100, 196, 255, 0.2);
+  padding-bottom: 8px;
 }
 
 .ability-description {
-    font-size: 14px;
-    line-height: 1.4;
-    color: #e0f7ff;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.ability-prerequisites {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #a0d8ff;
+}
+
+.ability-effects {
+  font-size: 13px;
+  margin: 12px 0;
+  background: rgba(100, 196, 255, 0.05);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.ability-effects div {
+  margin-bottom: 5px;
+}
+
+.ability-cost {
+  font-size: 13px;
+  margin-top: 10px;
+  color: #ff9d5c;
+  text-align: right;
 }
 
 /* Responsive per abilità */
